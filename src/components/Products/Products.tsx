@@ -199,22 +199,23 @@ const Products = () => {
   };
 
   return (
-    <section className="bg text-[#ffd700] py-10" id="products">
+    <section className="bg text-[#ffd700] py-10 scale-y-105" id="products">
       <h2 className="text-center lobster text-[40px] tracking-wider mb-8">
         {t("products.title")}
       </h2>
       <div className="flex justify-center items-center gap-4 max-w-[1200px] mx-auto">
         <button
           onClick={() => setSelectedCategory("chocolate")}
-          className={`mb-[30px] border border-[gold] rounded-full p-4 ${
+          className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
             selectedCategory === "chocolate" ? "shadow-md shadow-[#ffd700]" : ""
           }`}
         >
           <img src={Category1} alt="chocolate" className="h-[40px] w-[40px]" />
         </button>
+          
         <button
           onClick={() => setSelectedCategory("birthday")}
-          className={`mb-[30px] border border-[gold] rounded-full p-4 ${
+          className={`mb-[30px] border border-[gold] hover:scale-110 duration-300 rounded-full p-4 ${
             selectedCategory === "birthday" ? "shadow-md shadow-[#ffd700]" : ""
           }`}
         >
@@ -222,7 +223,7 @@ const Products = () => {
         </button>
         <button
           onClick={() => setSelectedCategory("wedding")}
-          className={`mb-[30px] border border-[gold] rounded-full p-4 ${
+          className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
             selectedCategory === "wedding" ? "shadow-md shadow-[#ffd700]" : ""
           }`}
         >

@@ -11,7 +11,7 @@ interface BasketContextProps {
   basketCount: number;
   basketItems: BasketItem[];
   addToBasket: (item: BasketItem) => void;
-  removeFromBasket: (id: number) => void; // New method
+  removeFromBasket: (id: number) => void; 
 }
 
 const BasketContext = createContext<BasketContextProps | undefined>(undefined);

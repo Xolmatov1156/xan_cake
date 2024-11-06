@@ -16,28 +16,28 @@ const About = () => {
           <img src={Small} alt="small_cake" className='max-w-full  mb-8 hover:scale-105 duration-300' />
         </div>
         <div className="flex flex-col w-full lg:w-1/2">
-          <div className="flex items-center gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
+          <div className="flex items-center gap-3 bg-black mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
             <img src={Cake} alt="Sifatli mahsulotlar" className='w-[60px] h-[60px]' />
             <div className='flex flex-col'>
               <h3 className="text-[30px]">{t('about.qualityProducts')}</h3>
               <p>{t('about.qualityProductsDescription')}</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
+          <div className="flex items-center gap-3 bg-black mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
             <img src={Delivery} alt="Yetkazib berish" className='w-[60px] h-[60px]' />
             <div className='flex flex-col'>
               <h3 className="text-[30px]">{t('about.delivery')}</h3>
               <p>{t('about.deliveryDescription')}</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
+          <div className="flex items-center bg-black gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
             <img src={Time} alt="7 Yillik Tajriba" className='w-[60px] h-[60px]' />
             <div className='flex flex-col'>
               <h3 className="text-[30px]">{t('about.experience')}</h3>
               <p>{t('about.experienceDescription')}</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
+          <div className="flex bg-black items-center gap-3 mb-4 p-4 border border-[gold] rounded-lg shadow-lg">
             <img src={Cheap} alt="Hamyonbop Narxlar" className='w-[60px] h-[60px]' />
             <div className='flex flex-col'>
               <h3 className="text-[26px]">{t('about.affordablePrices')}</h3>
