@@ -9,7 +9,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg text-[gold] bg-fixed bg-cover bg-center lobster py-10" id='about'>
+    <div className="bg text-[gold] bg-fixed bg-cover bg-center lobster pb-10" id='about'>
       <h2 className="text-center lobster text-[40px] tracking-wider mb-8">{t('about.title')}</h2>
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row  justify-between items-center gap-8 px-5">
         <div className="flex justify-center w-full lg:w-1/2 lg:order-first">
