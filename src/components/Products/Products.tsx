@@ -199,96 +199,100 @@ const Products = () => {
   };
 
   return (
-    <section className="bg text-[#ffd700] py-10 " id="products">
-      <h2 className="text-center lobster text-[40px] tracking-wider mb-8">
-        {t("products.title")}
-      </h2>
-      <div className="flex justify-center items-center gap-4 max-w-[1200px] mx-auto">
-        <button
-          onClick={() => setSelectedCategory("chocolate")}
-          className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
-            selectedCategory === "chocolate" ? "shadow-md shadow-[#ffd700]" : ""
+    <section
+  className="bg text-[#ffd700] py-10 bg-fixed bg-cover bg-center"
+  id="products"
+>
+  <h2 className="text-center lobster text-[40px] tracking-wider mb-8">
+    {t("products.title")}
+  </h2>
+  <div className="flex justify-center items-center gap-4 max-w-[1200px] mx-auto">
+    <button
+      onClick={() => setSelectedCategory("chocolate")}
+      className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
+        selectedCategory === "chocolate" ? "shadow-md shadow-[#ffd700]" : ""
+      }`}
+    >
+      <img src={Category1} alt="chocolate" className="h-[40px] w-[40px]" />
+    </button>
+
+    <button
+      onClick={() => setSelectedCategory("birthday")}
+      className={`mb-[30px] border border-[gold] hover:scale-110 duration-300 rounded-full p-4 ${
+        selectedCategory === "birthday" ? "shadow-md shadow-[#ffd700]" : ""
+      }`}
+    >
+      <img src={Category2} alt="birthday" className="h-[40px] w-[40px]" />
+    </button>
+    <button
+      onClick={() => setSelectedCategory("wedding")}
+      className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
+        selectedCategory === "wedding" ? "shadow-md shadow-[#ffd700]" : ""
+      }`}
+    >
+      <img src={Category3} alt="wedding" className="h-[40px] w-[40px]" />
+    </button>
+  </div>
+  <div className="max-w-[1200px] mx-auto pb-[90px] grid gap-[20px] px-[10px] grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+    {filteredProducts.map((product) => (
+      <div
+        key={product.id}
+        className="w-full rounded-[20px] flex flex-col shadow-md hover:scale-105 duration-300 bg-black border border-[gold]"
+      >
+        <img
+          src={product.image}
+          alt={product.name}
+          className={`md:h-[180px] h-[100px] max-w-[90%] mx-auto mt-[10px] ${
+            selectedCategory === "birthday" ||
+            selectedCategory === "wedding"
+              ? "rounded-[15px] scale-x-125"
+              : "rounded-[20px] object-contain"
+          } ${
+            product.category === "wedding" &&
+            product.id >= 14 &&
+            product.id <= 17
+              ? "scale-x-150"
+              : ""
           }`}
-        >
-          <img src={Category1} alt="chocolate" className="h-[40px] w-[40px]" />
-        </button>
-          
-        <button
-          onClick={() => setSelectedCategory("birthday")}
-          className={`mb-[30px] border border-[gold] hover:scale-110 duration-300 rounded-full p-4 ${
-            selectedCategory === "birthday" ? "shadow-md shadow-[#ffd700]" : ""
-          }`}
-        >
-          <img src={Category2} alt="birthday" className="h-[40px] w-[40px]" />
-        </button>
-        <button
-          onClick={() => setSelectedCategory("wedding")}
-          className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
-            selectedCategory === "wedding" ? "shadow-md shadow-[#ffd700]" : ""
-          }`}
-        >
-          <img src={Category3} alt="wedding" className="h-[40px] w-[40px]" />
-        </button>
-      </div>
-      <div className="max-w-[1200px] mx-auto pb-[90px] grid gap-[20px] px-[10px] grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-        {filteredProducts.map((product) => (
-          <div
-            key={product.id}
-            className="w-full rounded-[20px] flex flex-col shadow-md hover:scale-105 duration-300 bg-black border border-[gold]"
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className={`md:h-[180px] h-[100px] max-w-[90%] mx-auto mt-[10px] ${
-                selectedCategory === "birthday" ||
-                selectedCategory === "wedding"
-                  ? "rounded-[15px] scale-x-125"
-                  : "rounded-[20px] object-contain"
-              } ${
-                product.category === "wedding" &&
-                product.id >= 14 &&
-                product.id <= 17
-                  ? "scale-x-150"
-                  : ""
+        />
+        <h3 className="mb-2 text-[18px] md:text-[20px] lobster pl-[20px]">
+          {product.name}
+        </h3>
+        <p className="text-[12px] md:text-[16px] pl-[20px]">
+          {t("products.cakeDescription")}
+        </p>
+        <div className="flex mt-3 justify-around pb-[10px] pr-[15px] items-center">
+          <p className="text-center">
+            <span className="text-[14px] md:text-[20px] lobster">
+              {t("products.price", { price: product.price })}
+            </span>{" "}
+            {t("products.currency")}
+          </p>
+          <button
+            onClick={() =>
+              handleAddToBasket(
+                product.id,
+                product.name,
+                product.price,
+                product.image
+              )
+            }
+            className={`border border-[gold] h-[40px] w-[40px] flex justify-center items-center rounded-full transition-opacity duration-300 
+              ${
+                addedItems[product.id]
+                  ? "opacity-50 cursor-not-allowed bg-gray-600"
+                  : "bg-black text-[gold]"
               }`}
-            />
-            <h3 className="mb-2 text-[18px] md:text-[20px] lobster pl-[20px]">
-              {product.name}
-            </h3>
-            <p className="text-[12px] md:text-[16px] pl-[20px]">
-              {t("products.cakeDescription")}
-            </p>
-            <div className="flex mt-3 justify-around pb-[10px] pr-[15px] items-center">
-              <p className="text-center">
-                <span className="text-[14px] md:text-[20px] lobster">
-                  {t("products.price", { price: product.price })}
-                </span>{" "}
-                {t("products.currency")}
-              </p>
-              <button
-                onClick={() =>
-                  handleAddToBasket(
-                    product.id,
-                    product.name,
-                    product.price,
-                    product.image
-                  )
-                }
-                className={`border border-[gold] h-[40px] w-[40px] flex justify-center items-center rounded-full transition-opacity duration-300 
-                  ${
-                    addedItems[product.id]
-                      ? "opacity-50 cursor-not-allowed bg-gray-600"
-                      : "bg-black text-[gold]"
-                  }`}
-                disabled={addedItems[product.id]}
-              >
-                <img src={Basket} alt="basket" className="w-[20px] h-[20px]" />
-              </button>
-            </div>
-          </div>
-        ))}
+            disabled={addedItems[product.id]}
+          >
+            <img src={Basket} alt="basket" className="w-[20px] h-[20px]" />
+          </button>
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 };
 

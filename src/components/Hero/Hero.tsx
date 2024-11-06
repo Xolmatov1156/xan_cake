@@ -20,7 +20,7 @@ const Hero = () => {
       }}
       pagination={{ clickable: true }}
       modules={[Pagination, Autoplay]}
-      className="bg bg-green text-[gold] flex mt-[60px] scale-y-105"
+      className="bg bg-green text-[gold]  flex mt-[60px] bg-fixed bg-cover bg-center"
     >
       {[HeroImg, Firstcake, HeroImg3].map((imgSrc, index) => (
         <SwiperSlide key={index}>

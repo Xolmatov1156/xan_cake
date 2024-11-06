@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t, } = useTranslation();
   return (
-    <footer id="contact" className="w-screen h-auto bg pt-[50px]">
+    <footer id="contact" className="w-screen h-auto bg pt-[50px] bg-fixed bg-cover bg-center">
   <div className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-[20px] md:gap-[85px] pb-[50px]">
     <div className="flex flex-col text-[gold] md:flex-1 contact-mobile ">
       <div data-aos="fade-right" className="flex flex-col relative">
