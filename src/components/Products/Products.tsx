@@ -200,7 +200,7 @@ const Products = () => {
 
   return (
     <section
-  className="bg text-[#ffd700] py-10 bg-fixed bg-cover bg-center"
+  className="bg text-[#ffd700] bg-fixed bg-cover bg-center"
   id="products"
 >
   <h2 className="text-center lobster text-[40px] tracking-wider mb-8">
