@@ -168,7 +168,7 @@ const Products = () => {
     : products;
 
   useEffect(() => {
-    const savedAddedItems = localStorage.getItem("addedItems");
+    const savedAddedItems = sessionStorage.getItem("addedItems");
     if (savedAddedItems) {
       setAddedItems(JSON.parse(savedAddedItems));
     }
@@ -181,7 +181,7 @@ const Products = () => {
     }, {} as { [key: number]: boolean });
 
     setAddedItems(updatedAddedItems);
-    localStorage.setItem("addedItems", JSON.stringify(updatedAddedItems));
+    sessionStorage.setItem("addedItems", JSON.stringify(updatedAddedItems));
   }, [basketItems]);
 
   const handleAddToBasket = (
@@ -194,7 +194,7 @@ const Products = () => {
       addToBasket({ id, name, price, image });
       const updatedAddedItems = { ...addedItems, [id]: true };
       setAddedItems(updatedAddedItems);
-      localStorage.setItem("addedItems", JSON.stringify(updatedAddedItems));
+      sessionStorage.setItem("addedItems", JSON.stringify(updatedAddedItems));
     }
   };
 
@@ -209,35 +209,38 @@ const Products = () => {
   <div className="flex justify-center items-center gap-4 max-w-[1200px] mx-auto">
     <button
       onClick={() => setSelectedCategory("chocolate")}
-      className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
+      className={`mb-[30px] relative border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
         selectedCategory === "chocolate" ? "shadow-md shadow-[#ffd700]" : ""
       }`}
     >
       <img src={Category1} alt="chocolate" className="h-[40px] w-[40px]" />
+      <p className="absolute top-[80px] left-0 right-0 text-[10px]">{t('round')}</p>
     </button>
 
     <button
       onClick={() => setSelectedCategory("birthday")}
-      className={`mb-[30px] border border-[gold] hover:scale-110 duration-300 rounded-full p-4 ${
+      className={`mb-[30px] border relative border-[gold] hover:scale-110 duration-300 rounded-full p-4 ${
         selectedCategory === "birthday" ? "shadow-md shadow-[#ffd700]" : ""
       }`}
     >
       <img src={Category2} alt="birthday" className="h-[40px] w-[40px]" />
+      <p className="absolute top-[80px] left-0 right-0 text-[10px]">{t('big')}</p>
     </button>
     <button
       onClick={() => setSelectedCategory("wedding")}
-      className={`mb-[30px] border hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
+      className={`mb-[30px] border relative hover:scale-110 duration-300 border-[gold] rounded-full p-4 ${
         selectedCategory === "wedding" ? "shadow-md shadow-[#ffd700]" : ""
       }`}
     >
       <img src={Category3} alt="wedding" className="h-[40px] w-[40px]" />
+      <p className="absolute top-[80px] left-0 right-0 text-[10px]">{t('sweet')}</p>
     </button>
   </div>
   <div className="max-w-[1200px] mx-auto pb-[90px] grid gap-[20px] px-[10px] grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
     {filteredProducts.map((product) => (
       <div
         key={product.id}
-        className="w-full rounded-[20px] flex flex-col shadow-md hover:scale-105 duration-300 bg-black border border-[gold]"
+        className="w-full mt-[20px] rounded-[20px] flex flex-col shadow-md hover:scale-105 duration-300 bg-black border border-[gold]"
       >
         <img
           src={product.image}

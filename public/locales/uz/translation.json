@@ -41,5 +41,13 @@
     "Telephone":"Telefon",
     "Comments":"Izohlar",
     "request":"Ariza yuborish",
-    "location":"Toshkent, Shayxontohur tumani, Beltepa 1-jamoa"
+    "location":"Toshkent, Shayxontohur tumani, Beltepa 1-jamoa",
+    "choose":"Mahsulot tanlang",
+  "Shokoladli Tort": "Shokoladli Tort",
+  "Mevali Tort": "Mevali Tort",
+  "Katta Shokoladli Tort": "Katta Shokoladli Tort",
+  "Katta Mevali Tort": "Katta Mevali Tort",
+  "sweet":"Shirinlik",
+  "big":"Katta Tort",
+  "round":"Dumaloq Tort"
 }

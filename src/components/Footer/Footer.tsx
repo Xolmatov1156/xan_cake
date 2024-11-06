@@ -19,7 +19,7 @@ const Footer = () => {
     const message = `
       <b>Yangi zakaz:</b>
       <b>Ism:</b> ${name.value}
-      <b>Raqam:</b> ${phone.value}
+      <b>Telefon Raqam:</b> ${phone.value}
       <b>Izoh:</b> ${comment.value}
       <b>Mahsulot:</b> ${product.value}
     `;
@@ -141,16 +141,18 @@ const Footer = () => {
                 required
               >
                 <option value="" disabled selected>
-                  Mahsulot tanlang
+                  {t("choose")}
                 </option>
-                <option value="Shokoladli Tort">Shokoladli Tort</option>
-                <option value="Mevali Tort">Mevali Tort</option>
+                <option value="Shokoladli Tort">{t("Shokoladli Tort")}</option>
+                <option value="Mevali Tort">{t("Mevali Tort")}</option>
                 <option value="Katta Shokoladli Tort">
-                  Katta Shokoladli Tort
+                  {t("Katta Shokoladli Tort")}
                 </option>
-                <option value="Katta Mevali Tort">Katta Mevali Tort</option>
+                <option value="Katta Mevali Tort">
+                  {t("Katta Mevali Tort")}
+                </option>
               </select>
-
+              
               <textarea
                 required
                 placeholder={t("Comments")}
