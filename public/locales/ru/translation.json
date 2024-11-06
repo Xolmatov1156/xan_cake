@@ -1,0 +1,44 @@
+{
+  "header": {
+    "about": "О нас",
+    "products": "Продукты",
+    "clients": "Клиенты",
+    "contact": "Контакт"
+  },
+  "hero": {
+    "title": "Вкуснейшие тортики для вас",
+    "text": "Вся наша продукция производится с нуля по семейным рецептам и только из ингредиентов высочайшего качества."
+  },
+  "about": {
+    "title": "О нас",
+    "qualityProducts": "Лучшее товары",
+    "qualityProductsDescription": "Сладости, приготовленные из особых ингредиентов, полны вкуса.",
+    "delivery": "Доставка",
+    "deliveryDescription": "Ваш заказ не будет вас ждать! Своевременная доставка.",
+    "experience": "7-летний опыт",
+    "experienceDescription": "Наш 7-летний опыт в кондитерском деле означает высокое качество.",
+    "affordablePrices": "Доступные цены",
+    "affordablePricesDescription": "У нас доступные цены на сладости для наших клиентов."
+  },
+  "products": {
+    "title": "Продукты",
+    "chocolateCakeTitle": "Шоколадный Торт",
+    "happyBirthdayCakeTitle": "Торт С Днем Рождения",
+    "weddingCakeTitle": "Свадебный Торт",
+    "blackForestCakeTitle": "Шоколадный Торт Из Леса",
+    "cakeDescription": "Вкусно приготовлено с любовью.",
+    "price": "{{price}}",
+    "currency": "Cym",
+    "basketTitle": "Корзина",
+    "emptyBasket": "Ваша корзина пуста."
+  },
+  "bigcake": "Большой Торт",
+  "Contact":"Связаться",
+    "Social media":"Социальные сети",
+    "submit":"Отправить заявку",
+    "Name":"Имя",
+    "Surname":"Фамилия",
+    "Telephone":"Телефон",
+    "Comments":"Комментарии",
+    "request":"Отправить заявку"
+}

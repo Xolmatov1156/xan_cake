@@ -1,0 +1,44 @@
+{
+    "header":{
+        "about":"Biz haqimizda",
+        "products":"Mahsulotlar",
+        "clients":"Xaridorlar",
+        "contact":"Aloqa"
+    },
+    "hero":{
+        "title":"Siz uchun mazali tortlar",
+        "text":"Bizning barcha mahsulotlarimiz faqat eng yuqori sifatli ingredientlar bilan oilaviy retseptlar yordamida noldan tayyorlanadi"
+    },
+    "about": {
+    "title": "Biz Haqimizda",
+    "qualityProducts": "Sifatli mahsulotlar",
+    "qualityProductsDescription": "Lazzat to'la, maxsus ingredientlardan tayyorlangan shirinliklar.",
+    "delivery": "Yetkazib berish",
+    "deliveryDescription": "Buyurtmangiz sizni kutib qolmaydi! O'z vaqtida yetkazib berish xizmati.",
+    "experience": "7 Yillik Tajriba",
+    "experienceDescription": "Bizning 7 yillik tajribamiz qandolat sohasida yuqori sifatni ifodalaydi.",
+    "affordablePrices": "Hamyonbop Narxlar",
+    "affordablePricesDescription": "Bizda mijozlarimiz uchun hamyonbop shirinliklar narxlari."
+  },
+  "products": {
+    "title": "Mahsulotlar",
+    "chocolateCakeTitle": "Shokoladli Tort",
+    "happyBirthdayCakeTitle": "Tug'ilgan Kun Torti",
+    "weddingCakeTitle": "Nikoh Torti",
+    "blackForestCakeTitle": "Qora O'rmon Torti",
+    "cakeDescription": "Sevgi bilan tayyorlangan mazali.",
+    "price": "  {{price}}",
+    "currency": "UZS",
+    "basketTitle": "Savatcha",
+    "emptyBasket": "Savatchangiz bo'sh."
+  },
+  "bigcake":"Katta Tort",
+  "Contact":"Aloqa",
+    "Social media":"Ijtimoiy tarmoqlar",
+    "submit":"Ariza yuborish",
+    "Name":"Ism",
+    "Surname":"Familiya",
+    "Telephone":"Telefon",
+    "Comments":"Izohlar",
+    "request":"Ariza yuborish"
+}

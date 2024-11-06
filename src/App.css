@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lobster {
+  font-family: "Lobster", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+*{
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bg {
+  background-image: url('../src/assets/bgg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-color: antiquewhite;
+}
