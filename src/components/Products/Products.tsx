@@ -199,7 +199,7 @@ const Products = () => {
   };
 
   return (
-    <section className="bg text-[#ffd700] py-10 scale-y-105" id="products">
+    <section className="bg text-[#ffd700] py-10 " id="products">
       <h2 className="text-center lobster text-[40px] tracking-wider mb-8">
         {t("products.title")}
       </h2>

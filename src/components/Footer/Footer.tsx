@@ -40,10 +40,10 @@ const Footer = () => {
           <img src={Group} alt="Group" className="w-[35px] h-[35px]" />
           Telegram
         </a>
-        <div className="flex items-center gap-[5px] mx-auto md:mx-0">
+        <a href="https://yandex.uz/maps/org/xan_cake/241568712814/?ll=69.167061%2C41.347919&z=16.85" target="_blank" className="flex items-center gap-[5px] mx-auto md:mx-0">
           <img src={Location} alt="Location" className="pr-[5px] w-[35px] h-[35px]" />
-          Tashkent, Mustaqillik 59.
-        </div>
+          <p className="text-[12px] scale-105">{t("location")}</p>
+        </a>
       </div>
     </div>
     
