@@ -26,7 +26,7 @@
     "happyBirthdayCakeTitle": "Tug'ilgan Kun Torti",
     "weddingCakeTitle": "Nikoh Torti",
     "blackForestCakeTitle": "Qora O'rmon Torti",
-    "cakeDescription": "Sevgi bilan tayyorlangan mazali.",
+    "cakeDescription": "Qaymoq Shokolad Sgushon moloko",
     "price": "  {{price}}",
     "currency": "UZS",
     "basketTitle": "Savatcha",
@@ -49,5 +49,6 @@
   "Katta Mevali Tort": "Katta Mevali Tort",
   "sweet":"Shirinlik",
   "big":"Katta Tort",
-  "round":"Dumaloq Tort"
+  "round":"Dumaloq Tort",
+  "sweets":"Shirinliklar"
 }

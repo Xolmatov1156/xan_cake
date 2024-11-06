@@ -32,136 +32,138 @@ const Products = () => {
       id: 1,
       image: Chocolate,
       name: t("products.chocolateCakeTitle"),
-      price: 200000,
+      price: 200000, 
       category: "chocolate",
     },
     {
       id: 2,
       image: Happy,
       name: t("products.happyBirthdayCakeTitle"),
-      price: 200000,
+      price: 250000, 
       category: "chocolate",
     },
     {
       id: 3,
       image: Wedding,
       name: t("products.weddingCakeTitle"),
-      price: 200000,
+      price: 220000, 
       category: "chocolate",
     },
     {
       id: 4,
       image: Forest,
       name: t("products.blackForestCakeTitle"),
-      price: 200000,
+      price: 300000, 
       category: "chocolate",
     },
     {
       id: 5,
       image: Chocolate,
       name: t("products.chocolateCakeTitle"),
-      price: 200000,
+      price: 180000, 
       category: "chocolate",
     },
     {
       id: 6,
       image: Happy,
       name: t("products.happyBirthdayCakeTitle"),
-      price: 200000,
+      price: 250000, 
       category: "chocolate",
     },
     {
       id: 7,
       image: Wedding,
       name: t("products.weddingCakeTitle"),
-      price: 200000,
+      price: 230000, 
       category: "chocolate",
     },
     {
       id: 8,
       image: Forest,
       name: t("products.blackForestCakeTitle"),
-      price: 200000,
+      price: 280000, 
       category: "chocolate",
     },
     {
       id: 9,
       image: BigCake1,
       name: t("bigcake"),
-      price: 200000,
+      price: 350000, 
       category: "birthday",
     },
     {
       id: 10,
       image: BigCake2,
       name: t("bigcake"),
-      price: 200000,
+      price: 300000, 
       category: "birthday",
     },
     {
       id: 11,
       image: BigCake3,
       name: t("bigcake"),
-      price: 200000,
+      price: 400000, 
       category: "birthday",
     },
     {
       id: 12,
       image: BigCake4,
       name: t("bigcake"),
-      price: 200000,
+      price: 450000, 
       category: "birthday",
     },
     {
       id: 13,
       image: BigCake5,
       name: t("bigcake"),
-      price: 200000,
+      price: 500000, 
       category: "birthday",
     },
     {
       id: 14,
       image: Sweets1,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 150000, 
       category: "wedding",
     },
     {
       id: 15,
       image: Sweets2,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 120000, 
       category: "wedding",
     },
     {
       id: 16,
       image: Sweets3,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 130000, 
       category: "wedding",
     },
     {
       id: 17,
       image: Sweets4,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 140000, 
       category: "wedding",
     },
     {
       id: 18,
       image: Sweets5,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 160000, 
       category: "wedding",
     },
     {
       id: 19,
       image: Sweets6,
-      name: t("bigcake"),
-      price: 200000,
+      name: t("sweets"),
+      price: 170000, 
       category: "wedding",
     },
   ];
+  
+  
 
   const filteredProducts = selectedCategory
     ? products.filter((product) => product.category === selectedCategory)
@@ -261,7 +263,7 @@ const Products = () => {
         <h3 className="mb-2 text-[18px] md:text-[20px] lobster pl-[20px]">
           {product.name}
         </h3>
-        <p className="text-[12px] md:text-[16px] pl-[20px]">
+        <p className="text-[12px] md:text-[16px] px-[20px]">
           {t("products.cakeDescription")}
         </p>
         <div className="flex mt-3 justify-around pb-[10px] pr-[15px] items-center">

@@ -26,7 +26,7 @@
     "happyBirthdayCakeTitle": "Торт С Днем Рождения",
     "weddingCakeTitle": "Свадебный Торт",
     "blackForestCakeTitle": "Шоколадный Торт Из Леса",
-    "cakeDescription": "Вкусно приготовлено с любовью.",
+    "cakeDescription": "Крем Шоколад Сгушон молоко",
     "price": "{{price}}",
     "currency": "Cym",
     "basketTitle": "Корзина",
@@ -49,5 +49,6 @@
   "Katta Mevali Tort": "Большой фруктовый торт",
   "sweet":"Сладость",
   "big":"Большой Торт",
-  "round":"Круглый Торт"
+  "round":"Круглый Торт",
+  "sweets":"Сладости"
 }
