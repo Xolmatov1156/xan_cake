@@ -6,14 +6,14 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t, } = useTranslation();
   return (
-    <footer id="contact" className="w-screen h-auto bg pt-[50px] bg-fixed bg-cover bg-center">
+    <footer id="contact" className="w-screen bg bg-fixed bg-cover bg-center">
   <div className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-[20px] md:gap-[85px] pb-[50px]">
     <div className="flex flex-col text-[gold] md:flex-1 contact-mobile ">
       <div data-aos="fade-right" className="flex flex-col relative">
         <h2 className="text-[36px] md:text-[48px] font-semibold text-center md:text-start">{t("Contact")}</h2>
       </div>
       <h3 className="mt-[35px] text-center md:text-start">{t("Contact")}:</h3>
-      <a href="tel:+998935975577" className="text-center md:text-start">+998 93 597 55 77</a>
+      <a href="tel:+998957975544" className="text-center md:text-start">+998 95 797 55 44</a>
       <div className="flex gap-[20px] flex-col mt-[35px] text-center md:text-start">
         <h3>{t("Social media")}</h3>
         <a
@@ -26,13 +26,13 @@ const Footer = () => {
           xan__cake__
         </a>
           <div className="flex flex-col">
-            <a target="_blank" className="flex gap-[5px] hover:text-[gold] mx-auto md:mx-0" rel="noopener noreferrer" href="https://t.me/Ataev_Bakhodir90">
+            <a target="_blank" className="flex gap-[5px] hover:text-[gold] mx-auto md:mx-0" rel="noopener noreferrer" href="https://t.me/beka5544">
             <img src={Telegram} alt="Telegram" className="w-[30px] h-[30px]" />
-              t.me/Ataev_Bakhodir90
+              t.me/Beka5544
             </a>
         </div>
         <a
-          href="https://t.me/easyvizatourconsulting"
+          href="https://t.me/beka5544"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-[5px] mx-auto md:mx-0"
